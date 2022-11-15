@@ -1,0 +1,76 @@
+.footer-primary {
+  background-color: $brand-secondary;
+  color: $gray-tertiary;
+  font-size: 14px;
+  font-weight: 300;
+
+  &-inner {
+    padding: 50px;
+    display: grid;
+    row-gap: 43px;
+    grid-template-areas:
+      'nav'
+      'contact'
+      'support';
+
+    @include media-breakpoint-up(lg) {
+      padding-left: 12px;
+      padding-right: 12px;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+        'nav nav'
+        'support contact';
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    row-gap: 43px;
+    grid-area: nav;
+
+    @include media-breakpoint-up(lg) {
+      flex-wrap: nowrap;
+      column-gap: 110px;
+    }
+
+    ul {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      @include media-breakpoint-up(lg) {
+        flex-basis: auto;
+        gap: 4px;
+      }
+    }
+  }
+
+  .footer-contact {
+    grid-area: contact;
+    p :first-child {
+      text-transform: uppercase;
+    }
+
+    p span {
+      font-weight: 700;
+    }
+  }
+
+  .footer-support {
+    grid-area: support;
+    text-transform: uppercase;
+    margin: 0 auto;
+
+    li {
+      display: inline-block;
+    }
+
+    ul li i {
+      color: $brand-primary;
+      display: block;
+    }
+  }
+}
