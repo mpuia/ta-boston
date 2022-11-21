@@ -13,7 +13,7 @@ export default function HomePayment() {
         </li>
 
         <li>
-          <img src="/images/payment/mastercard.jpg" alt="" />
+          <img src="/images/payment/mastercard.jpg" alt=""></img>
         </li>
 
         <li>

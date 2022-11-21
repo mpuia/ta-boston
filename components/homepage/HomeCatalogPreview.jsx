@@ -1,4 +1,6 @@
 import ProductTile from "./catalog/ProductTile";
+import ProductTile2 from "./catalog/ProductTile2";
+import ProductTile3 from "./catalog/ProductTile3";
 
 export default function HomeCatalogPreview () {
   return (
@@ -22,10 +24,10 @@ export default function HomeCatalogPreview () {
         <ProductTile></ProductTile>
       </li>
       <li>
-        <ProductTile></ProductTile>
+        <ProductTile2></ProductTile2>
       </li>
       <li>
-        <ProductTile></ProductTile>
+        <ProductTile3></ProductTile3>
       </li>
     </ul>
   </section>
