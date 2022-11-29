@@ -50,27 +50,51 @@
 
   .footer-contact {
     grid-area: contact;
-    p :first-child {
+    display: inline-block;
+    justify-content: center;
+
+    h1 {
       text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 300;
+
+      span {
+        font-weight: 500;
+      }
     }
 
-    p span {
-      font-weight: 700;
+    a[href^='mailto:'] {
+      color: $brand-primary;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
     }
   }
 
   .footer-support {
     grid-area: support;
     text-transform: uppercase;
-    margin: 0 auto;
+    display: flex;
+    justify-self: center;
 
-    li {
-      display: inline-block;
+    @include media-breakpoint-up(lg) {
+      align-self: end;
+      justify-end: start;
     }
 
-    ul li i {
-      color: $brand-primary;
-      display: block;
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+
+      i[class*='fa-'] {
+        color: $brand-primary;
+        display: block;
+        font-size: 32px;
+        margin-bottom: 8px;
+      }
     }
   }
 }

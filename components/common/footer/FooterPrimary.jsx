@@ -152,10 +152,13 @@ export default function FooterPrimary() {
       </nav>
 
       <section className="footer-contact">
-      <p><span>Thread Affair</span> Milano</p>
-      <p>Largo Augusto 3, Milano, 20122, Milano, IT</p>
-      <p>TEL: 0039 02 760 003 66</p>
+      <h1>
+        <span>Thread Affair</span> Milano
+        </h1>
+      <p>Largo Augusto 3, Milano, 20122, Milano, IT
+      <a href="tel:+39 02 760 003 66">Tel: 0039 02 760 003 66</a>
       <a href="mailto:office@thread-affair.com">office@thread-affair.com</a>
+      </p>
       </section>
 
       <nav className="footer-support">
@@ -175,7 +178,7 @@ export default function FooterPrimary() {
           </li>
 
           <li>
-            <a href="tel:+0741123456" title="Email us">
+            <a href="email" title="Email us">
             <i className="fa-solid fa-envelope"></i>
               Email
             </a>

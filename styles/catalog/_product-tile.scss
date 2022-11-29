@@ -1,3 +1,6 @@
+.product-tile-header {
+  text-align: center;
+}
 .product-tile {
   &-image {
     position: relative;
@@ -16,40 +19,49 @@
   h1 {
     font-size: 24px;
     color: $black;
-    margin-top: 30px;
-    display: inline-block;
-  }
+    margin: 18px 0 12px 0;
+    text-align: center;
 
-  h1 span {
-    font-size: 24px;
-    color: $gray-primary;
-    display: inline-block;
-    font-weight: 500;
-  }
+    span:first-child {
+      font-size: 24px;
+      color: $gray-primary;
+      font-weight: 500;
+    }
 
-  h1 bdi {
-    font-size: 24px;
-    font-weight: lighter;
-    color: $gray-primary;
-    display: inline-block;
+    span:nth-child(2) {
+      font-size: 24px;
+      font-weight: lighter;
+      color: $gray-primary;
+    }
   }
 
   h2 {
     font-size: 18px;
-    font-weight: lighter;
-    text-align: center;
-  }
-
-  span {
-    font-size: 24px;
-    text-align: center;
-    display: block;
-    font-weight: lighter;
-  }
-
-  bdi {
-    color: $brand-primary;
     font-weight: 300;
+    text-align: center;
+    line-height: 22px;
+  }
+
+  .product-tile-image span {
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    font-weight: lighter;
+  }
+
+  .product-tile-pricing {
+    text-align: center;
+    margin-bottom: 19px;
+
+    .product-price-regular {
+      text-decoration: line-through;
+    }
+
+    .product-price span {
+      color: $brand-primary;
+      font-weight: 500;
+      display: block;
+    }
   }
 
   footer {

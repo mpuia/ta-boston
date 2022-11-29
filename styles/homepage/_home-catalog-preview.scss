@@ -25,17 +25,17 @@
     .product-tiles {
       @include media-breakpoint-up(lg) {
         display: block;
-      }
 
-      & > li {
-        width: 27.386541%;
-        // 350: 1278
-        float: left;
-        margin-left: 8.8419405%;
-        // 113: 1278
+        & > li {
+          width: 27.386541%;
+          // 350: 1278
+          float: left;
+          margin-left: 8.8419405%;
+          // 113: 1278
 
-        &:first-child {
-          margin-left: 0;
+          &:first-child {
+            margin-left: 0;
+          }
         }
       }
     }
